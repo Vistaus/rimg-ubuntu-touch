@@ -1,6 +1,6 @@
 {
     "name": "rimg.frathiemann",
-    "description": "A simple ssh Image libary with local thumbnail caching",
+    "description": "Browse a remote image and video folder over SSH, with a fast local thumbnail cache",
     "architecture": "$ENV{ARCH}",
     "title": "remoteImage",
     "hooks": {
@@ -10,6 +10,6 @@
         }
     },
     "version": "1.0.0",
-    "maintainer": "Franz Thiemann <franz@thiemanm.io>",
+    "maintainer": "Franz Thiemann <franz@thiemann.io>",
     "framework" : "$ENV{CLICK_FRAMEWORK}"
 }
