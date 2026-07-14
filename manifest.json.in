@@ -1,0 +1,15 @@
+{
+    "name": "rimg.frathiemann",
+    "description": "A simple ssh Image libary with local thumbnail caching",
+    "architecture": "$ENV{ARCH}",
+    "title": "remoteImage",
+    "hooks": {
+        "rimg": {
+            "apparmor": "rimg.apparmor",
+            "desktop":  "rimg.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Franz Thiemann <franz@thiemanm.io>",
+    "framework" : "$ENV{CLICK_FRAMEWORK}"
+}

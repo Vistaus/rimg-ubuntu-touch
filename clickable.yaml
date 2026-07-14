@@ -1,0 +1,32 @@
+clickable_minimum_required: 8.8.0
+
+# Target Ubuntu Touch 24.04 (the device's OTA series). 24.04-1.x ships Qt 5.15,
+# which matches this app's Qt5 QML (QtQuick 2.7 / Lomiri.Components 1.3).
+# If your device is on the 24.04-2.x channel instead, change this to
+# "ubuntu-touch-24.04-2.x".
+framework: ubuntu-touch-24.04-1.x
+
+# Use the arch-specific cmake builder (not pure-qml-cmake): the app ships
+# arch-specific native wheels (cryptography/Pillow) in src/vendor, so the click
+# must be tagged with a real architecture (arm64), not "all". CMakeLists compiles
+# nothing -- it only installs the qml/src/assets trees.
+builder: cmake
+kill: qmlscene
+
+# Vendor the Python backend's dependencies into src/vendor so they ship inside
+# the click. This prebuild runs *inside* the architecture-specific build
+# container (clickable/...-ut24.04-1.x-arm64 => Python 3.12), so pip fetches
+# native wheels matching the device (cp312 manylinux2014_aarch64 for
+# cryptography/Pillow). src/ is installed into the click by CMakeLists.txt, so
+# src/vendor is packaged automatically.
+# CRITICAL: the clickable arm64 image is an *amd64* host that cross-compiles for
+# arm64. Its native pip would fetch amd64 wheels (wrong arch for the device), so
+# we must force the target tags explicitly: aarch64 + cp312 (UT 24.04 Python).
+# Without these flags the vendored .so files are x86_64 and fail to load on the
+# phone ("cannot open shared object file"). --only-binary=:all: + --platform
+# requires installing into --target (which we do). We also wipe src/vendor first
+# (it lives in the gitignored source tree and persists between builds) so no
+# stale/mixed-arch files survive.
+dependencies_host:
+  - python3-pip
+prebuild: "rm -rf ${ROOT}/src/vendor && pip3 install --target ${ROOT}/src/vendor --no-compile --only-binary=:all: --platform manylinux2014_aarch64 --python-version 312 --implementation cp --abi cp312 paramiko==3.5.1 pillow==10.4.0 av==14.2.0"

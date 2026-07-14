@@ -1,0 +1,6 @@
+/build/
+/.clickable/
+# Vendored Python deps populated by the clickable prebuild step (arch-specific).
+/src/vendor/
+__pycache__/
+*.pyc
