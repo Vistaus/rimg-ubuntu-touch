@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- rimg promotional banner (GitHub social preview / README header).
+     Copyright (C) 2026 Franz Thiemann, GPL-3.0-only (same as the app). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#333B6B"/>
+      <stop offset="1" stop-color="#232A4E"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A4278"/>
+      <stop offset="1" stop-color="#2B325C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- faint oversized key-bow motif in the background -->
+  <circle cx="1150" cy="560" r="260" fill="none" stroke="#F7F3EA" stroke-width="40" opacity="0.05"/>
+  <circle cx="1150" cy="560" r="150" fill="none" stroke="#F2B23E" stroke-width="30" opacity="0.07"/>
+
+  <!-- app icon tile -->
+  <g transform="translate(110,160)">
+    <rect width="320" height="320" rx="50" fill="url(#tile)"
+          stroke="#F7F3EA" stroke-opacity="0.12" stroke-width="2"/>
+    <!-- line-style photo frame -->
+    <rect x="66" y="80" width="183" height="155" rx="16" fill="none"
+          stroke="#F7F3EA" stroke-width="15"/>
+    <circle cx="122" cy="128" r="17" fill="#F2B23E"/>
+    <path d="M89 205 L141 146 L172 180 L199 153 L228 185" fill="none"
+          stroke="#F7F3EA" stroke-width="15" stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <!-- key badge -->
+    <circle cx="235" cy="235" r="59" fill="#F2B23E" stroke="#2B325C" stroke-width="9"/>
+    <circle cx="217" cy="217" r="15" fill="none" stroke="#2B325C" stroke-width="11"/>
+    <path d="M228 228 L261 261 M246 246 L257 235 M258 258 L269 247" fill="none"
+          stroke="#2B325C" stroke-width="11" stroke-linecap="round"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="510" y="310" font-family="Noto Sans, Ubuntu, DejaVu Sans, sans-serif"
+        font-size="88" font-weight="700" letter-spacing="-1">
+    <tspan fill="#F7F3EA">remote</tspan><tspan fill="#F2B23E">Image</tspan>
+  </text>
+  <rect x="514" y="338" width="76" height="7" rx="3.5" fill="#F2B23E"/>
+
+  <!-- tagline -->
+  <text x="510" y="404" font-family="Noto Sans, Ubuntu, DejaVu Sans, sans-serif"
+        font-size="34" fill="#F7F3EA" opacity="0.82">Your photos and videos, over SSH.</text>
+  <text x="510" y="452" font-family="Noto Sans, Ubuntu, DejaVu Sans, sans-serif"
+        font-size="24" fill="#F7F3EA" opacity="0.55">Key-based auth &#183; local thumbnail cache &#183; no cloud</text>
+
+  <!-- platform chip -->
+  <g>
+    <rect x="510" y="492" width="196" height="44" rx="22" fill="none"
+          stroke="#F7F3EA" stroke-opacity="0.35" stroke-width="2"/>
+    <text x="608" y="521" text-anchor="middle"
+          font-family="Noto Sans, Ubuntu, DejaVu Sans, sans-serif"
+          font-size="21" fill="#F7F3EA" opacity="0.8">Ubuntu Touch</text>
+  </g>
+</svg>

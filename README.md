@@ -1,3 +1,5 @@
+![remoteImage — your photos and videos, over SSH](assets/banner.svg)
+
 # remoteImage (`rimg`)
 
 A simple SSH image and video library for Ubuntu Touch with local thumbnail
