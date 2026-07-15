@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the rimg.frathiemann package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: rimg.frathiemann\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-14 13:55+0000\n"
+"PO-Revision-Date: 2026-07-15 10:39+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#: ../qml/Main.qml:134 ../qml/pages/GalleryPage.qml:32 rimg.desktop.in.h:1
+msgid "remoteImage"
+msgstr "remoteImage"
+
+#: ../qml/pages/GalleryPage.qml:39 ../qml/pages/SettingsPage.qml:62
+#: ../qml/pages/ViewerPage.qml:109
+msgid "Back"
+msgstr "Terug"
+
+#: ../qml/pages/GalleryPage.qml:45 ../qml/pages/SettingsPage.qml:58
+msgid "Settings"
+msgstr "Instellingen"
+
+#: ../qml/pages/GalleryPage.qml:196
+msgid ""
+"No images indexed yet.\n"
+"Open Settings to connect and index a remote folder."
+msgstr ""
+"Er zijn geen afbeeldingen beschikbaar.\n"
+"Open de instellingen en indexeer een externe map."
+
+#: ../qml/pages/GalleryPage.qml:197
+msgid "This folder is empty."
+msgstr "Deze map is leeg."
+
+#: ../qml/pages/GalleryPage.qml:202
+msgid "Open Settings"
+msgstr "Instellingen openen"
+
+#: ../qml/pages/SettingsPage.qml:41
+msgid "No index yet."
+msgstr "Er bestaat nog geen index."
+
+#: ../qml/pages/SettingsPage.qml:45
+msgid "Images: %1"
+msgstr "Afbeeldingen: %1"
+
+#: ../qml/pages/SettingsPage.qml:46
+msgid "Last updated: %1"
+msgstr "Bijgewerkt op %1"
+
+#: ../qml/pages/SettingsPage.qml:49
+msgid "Size on disk (incl. cached images): %1"
+msgstr "Omvang op schijf (incl. cache): %1"
+
+#: ../qml/pages/SettingsPage.qml:75
+msgid "Indexing %1 / %2"
+msgstr "Bezig met indexeren van %1/%2…"
+
+#: ../qml/pages/SettingsPage.qml:105
+msgid "Server"
+msgstr "Server"
+
+#: ../qml/pages/SettingsPage.qml:109
+msgid "Host"
+msgstr "Host"
+
+#: ../qml/pages/SettingsPage.qml:116
+msgid "Port"
+msgstr "Poort"
+
+#: ../qml/pages/SettingsPage.qml:124
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: ../qml/pages/SettingsPage.qml:131
+msgid "Remote image directory"
+msgstr "Afbeeldingenmap"
+
+#: ../qml/pages/SettingsPage.qml:139
+msgid "Thumbnail size: %1 px"
+msgstr "Miniatuurgrootte: %1 px"
+
+#: ../qml/pages/SettingsPage.qml:152
+msgid "Public key"
+msgstr "Openbare sleutel"
+
+#: ../qml/pages/SettingsPage.qml:157
+msgid "Add this key to ~/.ssh/authorized_keys on the server."
+msgstr "Plaats deze sleutel in ~/.ssh/authorized_keys op de server."
+
+#: ../qml/pages/SettingsPage.qml:168
+msgid "Copy public key"
+msgstr "Openbare sleutel kopiëren"
+
+#: ../qml/pages/SettingsPage.qml:175
+msgid "Public key copied to clipboard."
+msgstr "De sleutel is gekopieerd naar het klembord."
+
+#: ../qml/pages/SettingsPage.qml:180
+msgid "Index"
+msgstr "Index"
+
+#: ../qml/pages/SettingsPage.qml:186
+msgid "Loading..."
+msgstr "Bezig met laden…"
+
+#: ../qml/pages/SettingsPage.qml:192
+msgid "Test connection"
+msgstr "Verbinding testen"
+
+#: ../qml/pages/SettingsPage.qml:194
+msgid "Connecting..."
+msgstr "Bezig met verbinden…"
+
+#: ../qml/pages/SettingsPage.qml:203
+msgid "Cancel indexing"
+msgstr "Indexeren annuleren"
+
+#: ../qml/pages/SettingsPage.qml:204
+msgid "Re-index folder"
+msgstr "Map opnieuw indexeren"
+
+#: ../qml/pages/SettingsPage.qml:209
+msgid "Starting..."
+msgstr "Bezig met starten…"
+
+#: ../qml/pages/ViewerPage.qml:60
+msgid "Failed to load."
+msgstr "De afbeeldingen kunnen niet worden geladen."
+
+#: ../qml/pages/ViewerPage.qml:84
+msgid "Rotating..."
+msgstr "Bezig met draaien…"
+
+#: ../qml/pages/ViewerPage.qml:89
+msgid "Rotation failed."
+msgstr "Het draaien is mislukt."
+
+#: ../qml/pages/ViewerPage.qml:104
+msgid "%1 of %2"
+msgstr "%1 van %2"
+
+#: ../qml/pages/ViewerPage.qml:116
+msgid "Rotate right"
+msgstr "Naar rechts draaien"
+
+#: ../qml/pages/ViewerPage.qml:123
+msgid "Rotate left"
+msgstr "Naar links draaien"
